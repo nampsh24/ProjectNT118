@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.mapbox.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="590dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/baseline_navigation_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/my_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="650dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/baseline_my_location_24" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/zoom_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/baseline_zoom_in_24" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/zoom_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="590dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/baseline_zoom_out_24" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:elevation="4dp"
+        android:id="@+id/searchLayout"
+        app:boxCornerRadiusBottomEnd="20sp"
+        app:boxCornerRadiusBottomStart="20sp"
+        app:boxCornerRadiusTopEnd="20sp"
+        app:boxCornerRadiusTopStart="20sp"
+        app:boxStrokeWidthFocused="0sp"
+        app:boxStrokeWidth="0sp"
+        app:startIconDrawable="@drawable/baseline_search_24"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/searchET"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.mapbox.search.ui.view.SearchResultsView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_results_view"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginHorizontal="16dp"
+        android:visibility="gone"/>
+
+
+
+
+    
+
+</FrameLayout>
