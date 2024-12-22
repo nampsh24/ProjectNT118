@@ -71,15 +71,15 @@
             android:id="@+id/searchET"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.mapbox.search.ui.view.SearchResultsView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/search_results_view"
-        android:layout_marginTop="120dp"
-        android:layout_marginStart="10sp"
-        android:layout_marginEnd="10sp"
-        android:layout_marginHorizontal="16dp"
-        android:visibility="gone"/>
+<!--    <com.mapbox.search.ui.view.SearchResultsView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/search_results_view"-->
+<!--        android:layout_marginTop="120dp"-->
+<!--        android:layout_marginStart="10sp"-->
+<!--        android:layout_marginEnd="10sp"-->
+<!--        android:layout_marginHorizontal="16dp"-->
+<!--        />-->
 
 
 
